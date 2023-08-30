@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Formularios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <form action="https://www.crunchyroll.com/pt-br" method="get">
+
+    <!--a Label serve para identificar o que sera pedido no campo-->
+    <label>Nome usuario</label>
+    <input type="text" required placeholder="Digite o seu nome" />
+    <br /><br />
+    <!--o input serve para colocarmos o tipo de identifação do campo : imicio do Radio-->
+    <label for="">Numero de Telefone</label>
+    <input type="text" required placeholder="Digite o seu numero" />
+    <br /><br />
+
+    <label for="">CEP</label>
+    <input type="text" required placeholder="Digite o seu CEP" />
+
+    <br /><br /><br />
+   
+
+    <h4>Escolha uma musica</h4>
+    <input type="radio" name="musica" />
+    <label for="">Bailao</label>
+    <br />
+    <br />
+    <input type="radio" name="musica" />
+    <label for="">Sertanejo</label>
+    <br />
+    <br />
+    <input type="radio" name="musica" />
+    <label for="">Pop</label>
+    <br />
+    <br />
+    <input type="radio" name="musica" />
+    <label for="">Geek</label>
+    <!--Fim do input Radio-->
+
+    <!--Começo do input CheckBox-->
+    <h4>Sabor da pipoca</h4>
+    <input type="checkbox" />
+    <label for="">Doce</label>
+    <br />
+    <br />
+    <input type="checkbox" />
+    <label for="">chocolate</label>
+    <br />
+    <br />
+    <input type="checkbox" />
+    <label for="">Limão</label>
+    <br /><br />
+    <input type="checkbox" />
+    <label for="">Doce de leite</label>
+    <br /><br />
+    <!--Fim do CheckBox-->
+
+    <!--Input do tipo range-->
+    <label for="">05</label>
+    <input type="range" />
+    <label for="">100</label>
+    <!--Fim do Input Range-->
+    <br />
+    <br />
+    <!--Inicio do select-->
+    <label for="">Sorvete</label> <br />
+    <br />
+    <select name="" id="">
+      <option value="Selecione">Selecione</option>
+      <option value="Chocolate">Chocolate</option>
+      <option value="Morango">Morango</option>
+      <option value="Sensação">Sensação</option>
+      <option value="Flocos">Flocos</option>
+      <br /><br />
+      <!--DataList-->
+      <br /><br />
+      <label for="">Filmes</label>
+      <input type="text" list="Filmes" />
+      <datalist id="Filmes">
+        <br />
+        <br />
+        <option value="Homem Aranha">
+          Homem aranha é um filme da marvel
+        </option>
+        <option value="BesouroAzul">BesouroAzul é um filme da Dc</option>
+        <option value="Naruto">Naruto é um anime de Masashi kishimoto</option>
+      </datalist>
+
+      <!--TexteArea-->
+      <fieldset>
+        <legend>Fale sobre os seus filmes favoritos</legend>
+        <label for="">Filmes</label>
+        <input type="text" />
+        <textarea name="Filme" id="" cols="20" rows="5" placeholder="Digite aqui"></textarea>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Fale sobre o seu programada da xuxa Favorito</legend>
+        <label for="">Filmes</label>
+        <input type="text" />
+        <textarea name="Filme" id="" cols="15" rows="10" placeholder="Digite aqui"></textarea>
+      </fieldset> <br><br>  
+      <input type="submit" value="Cadastre-se" />
+    </select>
+  </form>
+</body>
+
+</html>
