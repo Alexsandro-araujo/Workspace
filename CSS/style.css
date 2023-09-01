@@ -1,4 +1,14 @@
 body{
-    background-color: burlywood;
-    font-family: 'Phudu', cursive;
+    background-color: black;
+    font-family: 'Bebas Neue', sans-serif;
+}
+h1, h2 {
+    color: blue;
+}
+p{
+    color: aliceblue;
+}
+
+li{
+    color: red;
 }
