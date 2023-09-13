@@ -1,0 +1,22 @@
+div {
+
+    border: solid black 1px;
+    /* Aplicando de forma individual */
+    /* margin-top: 10px; Topo = 10px
+    margin-right: 50px; direita = 50px 
+    margin-bottom: 50px;  Base = 50px 
+    margin-left: 50px; Esquerda = 50px */
+
+    margin: 50px;
+    /* Acima aplicando de forma  */
+}
+
+p {
+    border: solid red 1px;
+    /* padding-top: 150px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 200px; */
+    padding: 150px;
+    margin: 50px;
+}

@@ -19,6 +19,11 @@ head{
 table{
     border: 1px solid #000000;
     background-color: #8fbfb9;
+    text-align: center;
+}
+
+th,td{
+    border: 1px solid black;
 }
 
 .cabecalho{
