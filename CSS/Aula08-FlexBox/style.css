@@ -1,0 +1,25 @@
+#container{
+    display: flex;
+    /* flex-wrap: wrap; * Serve Para manter o conteudo fixo a pag para que ela n se qe/
+    /* flex-direction: column-reverse; */
+   /* justify-content: center; */
+   flex-wrap: wrap;
+
+}
+
+.itens{
+    border: solid 1px red;
+    margin-left: 1em;
+    margin: 1em;
+    border-radius: 15px 1px 12px;
+
+}
+
+.iten{
+    margin: 1em;
+    border: solid 1px cadetblue;
+    margin-left: 1em;
+    border-radius: 15px 1px 12px;
+    
+}
+
