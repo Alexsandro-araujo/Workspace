@@ -1,0 +1,62 @@
+#container{
+    display: grid;
+     /* grid-template-columns: 50px 50px 50px 50px; */
+    /* Acima estão as colunas e para dividirmos os valores entre as colunas e deixarmos uma do lado da outra devemos colocar a quantidade ou seja os valores que desejamos */
+    /* grid-template-rows: 2em; */
+     /*acima estamos dando um espaçamento entre as linhas  */
+      /* grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 15px;  */
+    /* grid-template-rows: 80px auto 80px;  */
+    /* grid-template-areas: "div "; */
+     grid-template-columns: 100px 100px;
+     /* justify-items: center;
+    align-items: center; */
+    justify-content: space-evenly;
+    grid-template-rows: 100px 100px;
+    align-content: end;
+    /* align-items: start; */
+    
+
+
+}
+
+.item-1{
+   
+    border: solid black 1px;
+}
+
+.item-2{
+    
+    border: solid blue 1px;
+}
+
+.item-3{
+   
+    border: solid rgb(0, 166, 255) 1px; 
+}
+
+.item-4{
+   
+    border: solid rgb(117, 227, 252) 1px;
+}
+
+.item-5{
+   
+    border: solid rgb(234, 139, 139) 1px;
+}
+
+.item-6{
+    
+    border: solid rgb(255, 163, 169) 1px;
+}
+
+.item-7{
+   
+    border: solid rgb(74, 2, 2) 1px;
+}
+
+.item-8{
+    
+    border: solid rgb(91, 137, 155) 1px;
+}
