@@ -1,21 +1,24 @@
 .container{
-    display: grid;
+    /* Abaixo esta o que vamos ultilizar no nosso site, ou seja sera um grid */
+    display: grid; 
+    /* abaixo esta as colunas que definimos, ou sejma serão 4 colunas */
     grid-template-columns: repeat(4, 1fr);
+    /* abaixo esta as nossas linhas que definimos, ou seja total de 6 linhas de 30px do tamanho fixo  */
     grid-template-rows: 30px 30px 30px 30px 30px 30px;
-
+    /* serve para mover as celulas dentro da area criada que seria o nosso item criado ou seja, nesse caso é a div */
     grid-template-areas: "div1 div1 div2 div2" "div3 div3 div3 div3" "div4 div4 div4 div4" ".div5 div5 ." "div6 div6 div6 div6" "div7 div7 div8 div9";
-   
-
-   
- 
+    background-color: bisque;
+    color: blue;
+    text-align: center;
 }
 
 .itens{
-    border: solid black 1px;
+    border: solid black 2px;
 }
 
 .item-1{
     grid-area: div1;
+   
 }
 
 .item-2{
