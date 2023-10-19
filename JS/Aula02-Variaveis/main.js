@@ -37,3 +37,29 @@ var texto1 = "SPIDER MAN" //estamos declarando uma variavel do tipo texto,
 var texto2 = " MELHOR HEROI" // estamos continuando o texto anterior,porem declarando outra variavel
 
 console.log(texto1 + texto2) // estamos fazendo a concatenação entre os dois textos e tornando unico e fazendo o mesmo ter um sentido
+
+console.clear() //estamos limpando todo o conteudo
+
+var incremento = 2; // estamos declarando a variavel que esta recebendo o valor de 2
+
+
+incremento+=28 // estamos redeclarando a variavel e acrescentando um valor a mais, ou seja tera uma soma entre o valor anterior e o valor atual que acabei de acrescentar
+
+console.log(incremento)
+
+console.clear() //estamos limpando o conteudo
+
+var imparPar = 3%2 // estamos declarando uma variavel o programa esta tentando identifcar se o resto da divisão é Impar ou Par
+console.log("se o resultado for 1 então o numero é Impar se o valor for 0 então o valor é par, esse então é o seu resultado " + imparPar) // estamos usando a concatenação para mostrar a mensagem para o usuario
+
+console.clear() // estamos limpando o conteudo
+
+var comparacao = 1>0 // estamos declarando uma variavel e nela estamos tentando encontrar um valor verdadeiro ou falso
+
+console.log("se o valor foi maior ou menor que ele mesmo, retornar um valor TRUE ou FALSE,logo o resultado é :  " + comparacao ) 
+console.clear() //estamos limpando o conteudo
+
+var doisSinaisDeIgual = 2 == 3
+console.log(doisSinaisDeIgual)
+
+console.clear() //estamos limpando o conteudo
