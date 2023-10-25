@@ -70,3 +70,48 @@ if(inscricao == true){
 }else{
     
 }
+
+console.clear()
+
+let pipoca1 = 10
+let pipoca2 = 56
+
+if (pipoca1 > pipoca2){
+    console.log(pipoca1 + " é maior")
+}else{
+    console.log(pipoca2 + " é maior")
+}
+
+console.clear()
+
+pipoca1 > pipoca2 ? console.log(pipoca1 + " é Maior") :
+console.log(pipoca2 + " é Maior");
+
+console.clear()
+
+let mes = 3
+switch(mes){
+   case 3:
+    console.log("Março")
+    break;
+    case 4:
+     console.log("Abril")
+    break;
+     case 10:
+     console.log("Outubro")
+    break;
+    case 12:
+    console.log("Dezembro")
+     break;
+     default:
+        console.log("Não encontrei o seu mês")
+}
+
+console.clear()
+
+var data = new Date
+console.log(`Estamos no ano `, data.getFullYear())
+console.clear()
+
+// Laço While
+
