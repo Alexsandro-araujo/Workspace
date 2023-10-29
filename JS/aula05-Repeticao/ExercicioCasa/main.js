@@ -1,8 +1,7 @@
-// Laço while
-
-let contador = 1;
-let tabu = 2;
-calculo = 0 * 2
-while(contador >= 0){ //true
-    console.log(`o valor da tabuada é ${contador}` + calculo); //estamos adicionando um numero a mais (++) incrementando
+let tabuada = 2
+let mul = tabuada * contador
+let contador = 0
+while(contador <=10){
+    console.log(tabuada + " * " + contador + " = " + tabuada * contador + 1)
+    contador = contador + 1
 }
