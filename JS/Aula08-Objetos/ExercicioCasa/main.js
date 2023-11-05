@@ -1,6 +1,3 @@
-function somaNumeros(num1 = 0, num2 = 0, num3 = 0) {
-    return num1 + num2 + num3;
-}
 
 function alertCookie(){
     alert("Voce quer um cookie?")
@@ -8,13 +5,20 @@ function alertCookie(){
 
 console.log("Você quer um cookie?")
 
-const hello = (alertSucesso) => { 
-    alert("Mensagem gerada com sucesso")
-    return 'Mensagem gerada com sucesso';
-    
+const alertSucesso = () => {
+    return 'Mensagem Gerada com Sucesso';
 };
+// console.log(alertSucesso);
+alert('Mensagem Gerada com Sucesso');
+console.log(alertSucesso());
 
-console.log(hello())
+
+function myFunc(valor1, valor2) {
+    return valor1 * valor2
+}
+
+let dias = myFunc(2, 365)
+console.log(dias)
 
 
 const notebook = { 
