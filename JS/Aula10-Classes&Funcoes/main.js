@@ -59,5 +59,6 @@ console.log(motorolo)
 console.log(motorola.desligar())//chamando um metodo
 console.log(motorolo.marcaModelo())//chamando um metodo
 //Acima estamos colocando as informações dentro do nosso objetos em um unico console.log
+console.log(motorolo.retornaIdade())
 var data = new Date()
-console.log(Data.getFullYear())
+console.log(data.getFullYear())
