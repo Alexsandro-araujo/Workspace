@@ -26,6 +26,9 @@ class celular{
         console.log('Não irei desligar seu banana, catapimbas')
        }
     }
+    retornaIdade(){
+        return this.anoAtual - this.anoDoCelular
+    }
 
     pesquisa(){
         console.log("pesquisando...............")
@@ -56,3 +59,5 @@ console.log(motorolo)
 console.log(motorola.desligar())//chamando um metodo
 console.log(motorolo.marcaModelo())//chamando um metodo
 //Acima estamos colocando as informações dentro do nosso objetos em um unico console.log
+var data = new Date()
+console.log(Data.getFullYear())
