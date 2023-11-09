@@ -7,7 +7,9 @@
 
 
 }
-
+::-webkit-scrollbar-corner{
+    color: #649ea7;
+}
 .itens{
     border: solid 1px red;
     margin-left: 1em;
