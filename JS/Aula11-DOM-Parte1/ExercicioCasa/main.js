@@ -7,4 +7,4 @@
 let tituloh1 = document.body;
 tituloh1.innerHTML = "cadastro de usuário"
 
-tituloh1.innerHTML = "empresa Macron"
+document.title = "Empresa Macron"
