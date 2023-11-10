@@ -1,0 +1,20 @@
+for (let c = 0; c <= buscaClasse.length; c++){  //Declaramos o for e colo em seguida uma variavel que vai receber um valor, seja na onde decidimos onde queremos que inicie o nosso for, logo em seguida colocamos a variavel declarada e se ela for igual ou menor que o tamanho de nosso array, e incrementar um valor c++....
+    buscaClasse[c].style.backgroundColor = 'blue'//ultilizando a variavel (buscaClasse) para estilizar da maneira que quero...  paragrafo é a nossa variavel que declaramos e estamos utilizando ela e logo em seguida o style.
+   buscaClasse[c].style.color = 'white'//ultilizando a variavel (buscaClasse) para estilizar da maneira que quero...  paragrafo é a nossa variavel que declaramos e estamos utilizando ela e logo em seguida o style.
+    buscaClasse[c].style.margin = '15px'//ultilizando a variavel (buscaClasse) para estilizar da maneira que quero...  paragrafo é a nossa variavel que declaramos e estamos utilizando ela e logo em seguida o style.
+    buscaClasse[c].style.borderRadius = '2px'//ultilizando a variavel (buscaClasse) para estilizar da maneira que quero...  paragrafo é a nossa variavel que declaramos e estamos utilizando ela e logo em seguida o style.
+}
+
+
+
+
+
+let buscaClasse = document.getElementsByClassName('item') //criando uma variavel que vai guardar a minha classe para modificar o mesmo depois.... temos que sempre colocar a Classe que declaramos no nosso HTML...
+console.log(buscaClasse)
+//apos declaramos uma variavel, temos que fazer um for, que seria para percorrer o nosso array, sendo assim :
+
+//Declaramos o for e colo em seguida uma variavel que vai receber um valor, seja na onde decidimos onde queremos que inicie o nosso for, logo em seguida colocamos a variavel declarada e se ela for igual ou menor que o tamanho de nosso array, e incrementar um valor c++....
+let acessaParagrafo = document.getElementsByTagName('p') 
+for (let c = 0; c <= acessaParagrafo.length; c++){ //ultilizando a variavel (acessaParagrafo) para estilizar da maneira que quero...  paragrafo é a nossa variavel que declaramos e estamos utilizando ela e logo em seguida o style.
+    acessaParagrafo[c].style.color = 'green' //ultilizando a variavel (acessaParagrafo) para estilizar da maneira que quero...  paragrafo é a nossa variavel que declaramos e estamos utilizando ela e logo em seguida o style.
+}
