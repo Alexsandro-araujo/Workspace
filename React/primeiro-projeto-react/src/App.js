@@ -1,6 +1,9 @@
-import logo from './logo.svg';
+import logo from './messi.jpeg';
 import './App.css';
 import Exemplo from './components/Exemplo'; //imporntando o componente
+import Exemplo2 from './components/Exemplo2'; //imporntando o componente
+import Mensagem from './components/BoasVindas'; //imporntando o componente
+
 function App() {
   return (
     <div className="App">
@@ -12,14 +15,17 @@ function App() {
         <h2>Lets Go Baby</h2>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
         >
           Iniciando o React
         </a>
+        <Mensagem/>
+        <Exemplo2/>
         <Exemplo/>
-      </header>
+       
+        </header>
     </div>
   );
 }
