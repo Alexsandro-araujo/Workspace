@@ -13,7 +13,7 @@ return(
           <li>Jujutsu Kaisen 0</li>
           <li>A voz do Silencio</li>
         </ul>
-        <h6>O filme Numero Um desse usuario é :</h6>
+        <h6 style={estilo}>O filme Numero Um desse usuario é :</h6>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVnlKRQW3GIB4I0s30Gzycq83LZ5qt9m4N4TdG3_beq-smMJth" alt="" />
     </>
 );
