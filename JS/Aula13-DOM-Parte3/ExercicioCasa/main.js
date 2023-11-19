@@ -1,90 +1,49 @@
-// let paragrafo = document.getElementById('paragrafo01'); //criando uma variavel que vai guardar o meu ID para modificar o mesmo depois.... temos que sempre colocar o ID que declaramos no nosso HTML...
 
-// paragrafo.style.color = 'red' //ultilizando a variavel (paragrafo) para estilizar da maneira que quero... o paragrafo é a nossa variavel que declaramos e estamos utilizando ela e logo em seguida o style.
-// paragrafo.style.textAlign = 'center' //ultilizando a variavel (paragrafo) para estilizar da maneira que quero...  paragrafo é a nossa variavel que declaramos e estamos utilizando ela e logo em seguida o style.
-// paragrafo.style.backgroundColor =  'black' //ultilizando a variavel (paragrafo) para estilizar da maneira que quero...  paragrafo é a nossa variavel que declaramos e estamos utilizando ela e logo em seguida o style.
-// paragrafo.style.borderRadius = '15px 15px 15px 15px' //ultilizando a variavel (paragrafo) para estilizar da maneira que quero...  paragrafo é a nossa variavel que declaramos e estamos utilizando ela e logo em seguida o style.
+const label = document.createElement("label");
+label.setAttribute("for", "salarioAtual");
+label.textContent = "Salário Atual: ";
 
 
+const inputSalario = document.createElement("input");
+inputSalario.type = "text";
+inputSalario.id = "salarioAtual";
+inputSalario.placeholder = "Insira o salário atual";
 
 
-// let acessaName = document.getElementsByTagName('name_item')
-// console.log(acessaName)
-// for(let z = 0; z <= acessaName.length; z++){
-//     if(z % 2 == 0){
-//         acessaName[z].style.color = 'pink'
-//     }
-// }
-
-// let item2 = document.getElementById('item2')
-// item2.remove()
-// let lista = document.getElementById('lista')
-// let item5 = document.getElementById('item5')
-
-// lista.insertBefore(item2,item5.nextSibling)
-
-// // let lista = document.getElementById('lista')
-// // lista.remove()
-
-// let retiraEstilo = document.getElementById('messi')
-// retiraEstilo.style.listStyle = 'none'
+const button = document.createElement("button");
+button.textContent = "Calcular Novo Salário";
+button.onclick = calcularNovoSalario;
 
 
+const resultadoElemento = document.createElement("p");
+resultadoElemento.id = "resultado";
 
-let inserindo = false;
+
+document.body.appendChild(label);
+document.body.appendChild(inputSalario);
+document.body.appendChild(button);
+document.body.appendChild(resultadoElemento);
 
 
+function calcularNovoSalario() {
 
-function adicionarImagem() {
-    // Criação da imagem
-    const imagem = document.createElement("img");
-    imagem.src = "img/umbrella.jpg";
-  
-    // imagem
-    document.body.appendChild(imagem);
-  
-    // -cor de fundo -
-    document.body.style.backgroundColor = "#FFFFF";
-  
-    const botao = document.getElementById("B_01");
-    botao.style.border = "2px solid #D9BC66";
-    botao.style.padding = "0.5rem";
-    botao.style.backgroundColor = "#BFBFBF";
-    botao.style.margin = "0.7rem";
-  }
-  function solicitarNome() {
-    // prompt
-    const nome = prompt("Digite seu nome:");
-  
-    //  usuário clicou em OK
-    if (nome !== null) {
-      const mensagem = document.createElement("p");
-      mensagem.textContent = `Olá ${nome}, bem-vindo à nossa academia`;
-  
-      // Inserção da mensagem
-      document.body.appendChild(mensagem);
-    }
-  }
-  
-  function exibirTabuada() {
-    // Solicitação do número via prompt
-    const numero = prompt("Digite um número para ver a tabuada:");
-  
-    // Verifica se o usuário clicou em OK e exibe a tabuada
-    if (numero !== null) {
-      const resultado = document.createElement("p");
-      resultado.textContent = `Tabuada do ${numero}:\n`;
-  
-      for (let i = 1; i <= 10; i++) {
-        const linha = `${numero} x ${i} = ${numero * i}\n`;
-        resultado.textContent += linha;
-      }
-  
-      // Inserção da tabuada abaixo do botão
-      document.body.appendChild(resultado);
-    }
+  const salarioAtual = parseFloat(inputSalario.value);
+
+  // Verifica se o valor inserido é válido
+  if (isNaN(salarioAtual) || salarioAtual <= 0) {
+    alert("Por favor, insira um valor válido para o salário atual.");
+    return;
   }
 
-function remove() {
-    document.body.innerHTML = '';
+ 
+  const aumentoPercentual = 17;
+  const reajusteAnual = 215;
+
+  const aumento = (salarioAtual * aumentoPercentual) / 100;
+  const novoSalario = salarioAtual + aumento + reajusteAnual;
+
+  
+  resultadoElemento.textContent = `O novo salário é R$ ${novoSalario.toFixed(
+    2
+  )}`;
 }
