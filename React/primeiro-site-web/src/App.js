@@ -4,7 +4,7 @@ import Principal from './components/principal';
 import Rodape from './components/rodape';
 function App() {
   return (
-    <div className="App" style={{backgroundColor: '#ffa500'}}>
+    <div className="App">
       <Cabecalho/>
       <Principal/>
       <Rodape/>
